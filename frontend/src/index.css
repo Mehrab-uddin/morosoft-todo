@@ -1,53 +1,132 @@
-main {
-  min-height: 80vh;
+* {
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
 }
-
-h3 {
-  padding: 1rem 0;
-}
-
-h1 {
-  font-size: 1.8rem;
-  padding: 1rem 0;
-}
-
-h2 {
-  font-size: 1.4rem;
-  padding: 0.5rem 0;
-}
-
-.rating span {
-  margin: 0.1rem;
-}
-
-/* carousel */
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
+.main-dev {
+  height: 100vh;
+  width: 100vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
 }
-.carousel-caption {
-  position: absolute;
+.login-content {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 2rem;
+  align-items: center;
+}
+.login-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 40%;
+  width: 50%;
+}
+.login-form input .register-form input {
+  margin-bottom: 0.5rem;
+}
+/* Register*/
+
+.register {
+  height: 100vh;
+  padding-bottom: 2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  background-color: lightgrey;
+}
+.register-content {
+  display: flex;
+  height: 50%;
+  width: 40%;
+  background-color: white;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50%;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #8a2b06;
+  justify-content: space-between;
+  padding: 1.5rem 0rem;
+}
+.navbar button {
+  margin-right: 2rem;
+  padding: 0.5rem;
+  background-color: lightgray;
+  color: black;
+}
+.navbar h2 {
+  color: white;
+  padding-left: 6rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.task-form {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.task-form textarea {
+  width: 40%;
+  margin-right: 1rem;
+  height: 100%;
+}
+.task-items {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.task {
+  display: flex;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  width: 42%;
+}
+.task p {
+  padding-right: 2rem;
+}
+.task button {
+  margin-right: 0.5rem;
+}
+.header {
+  position: fixed;
   top: 0;
-}
-
-.carousel-caption h2 {
-  color: #fff;
-}
-
-.carousel img {
-  height: 300px;
-  padding: 30px;
-  margin: 40px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.carousel a {
-  margin: 0 auto;
-}
-@media (max-width: 900px) {
-  .carousel-caption h2 {
-    font-size: 2.5vw;
-  }
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #8a2b06;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
 }
